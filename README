@@ -1,0 +1,63 @@
+FINAL PROJECT: FUTURAMA
+
+Sasha Farhat
+CSCI4229 Fall 2021
+
+Many parts of this project was borrowed from previous assignments in this class. This include basic shapes such as cubes and cylinders and cone. I borrowed texture formatting from assignment 6. I borrowed lighting from homework 5. I borrowed perspective (first person), from my assignment 4. 
+
+
+REFERENCES
+https://www.youtube.com/watch?v=qd6muA2Z0T8&ab_channel=AtiByte
+https://stackoverflow.com/questions/13862246/opengl-fps-camera-using-glulookat
+https://thepentamollisproject.blogspot.com/2018/02/setting-up-first-person-camera-in.html.
+
+instancing the windows on the building - https://learnopengl.com/Advanced-OpenGL/Instancing
+instancing the windows on the building (2)- https://stackoverflow.com/questions/7883377/opengl-drawing-squares-in-a-for-loop
+half a sphere - https://community.khronos.org/t/half-sphere/49408/3
+sphere - https://stackoverflow.com/questions/7687148/drawing-sphere-in-opengl-without-using-glusphere
+curved cylinder - https://stackoverflow.com/questions/52930454/opengl-glut-c-want-to-render-curved-cylinder
+transparency and background - https://stackoverflow.com/questions/1617370/how-to-use-alpha-transparency-in-opengl
+texture cylinder - https://stackguides.com/questions/37937316/opengl-wrapping-texture-around-cylinder
+
+
+The program was built in MAC OS. I was able to makefile by running command:
+gcc -Wall -Wno-deprecated-declarations -o final final.c -framework GLUT -framework OpenGL
+
+
+I am really proud of how this project turned out. I put many hours into researching, programming and executing this project. Creating this scene took me approximately 40+ hours to do.
+That being said these are my major points of recognition I would like you take a closer look on:
+- creating the windows primitively on the apartment buildings.
+- The engine of the space ship was made by playing around with the values of the curved cylinder function to create this star like shape to it. 
+- having the space cars and space ship moving over time. (tried to have them be as irregular as possible within the scope of time of the project).
+- texturing the cylinder skyscrapers
+
+FIRST PRESS 0
+(JUMP)FIRST PERSON MODE (Jump to certain parts of terrain)
+	keys: 1, 2, 3
+(JUMP) PERSPECTIVE MODE
+	keys: 1, 2, 3
+
+Key binding
+  i          Toggle axes
+  0          Reset view angle
+  ESC        Exit
+
+** first person **
+  f          Access first person view
+  w/W          move camera forward
+  a/A          move camera left
+  s/S          move camera  down
+  d/D          move camera right
+  arrows     look up, down, left, right
+
+**orthogonal and perspective **
+  m          Toggle between perspective and orthogonal
+  +/-        Changes field of view for perspective
+  arrows     Change view angle
+  j/J        decrease/increase diffuse
+  []         Lower/rise light
+  l          Toggles lighting
+
+
+
+
